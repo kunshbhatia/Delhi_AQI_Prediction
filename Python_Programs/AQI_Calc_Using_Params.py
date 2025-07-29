@@ -1,6 +1,6 @@
 import pandas as pd
 from Python_Programs.backend_processing import main_function
-
+# Made By Kunsh Bhatia
 def AQI_Using_Params(Date,Month,Year):
     AQI,PM25,PM10,NO2,SO2,CO,O3,Grade = main_function(Date,Month,Year)
     rq_list = ['PM25','PM10','NO2','SO2','CO','O3']
@@ -21,7 +21,7 @@ def AQI_Using_Params(Date,Month,Year):
         AQI_Low = rq['AQI_Low'].values[0]
         AQI_High = rq['AQI_High'].values[0]
         index = rq['Index'].values[0]
-
+        # Made By Kunsh Bhatia
         I = AQI_High - AQI_Low
         C = Conc_High - Conc_Low
         Diff = rq_values[i] - Conc_Low
@@ -47,3 +47,6 @@ def AQI_Using_Params(Date,Month,Year):
         
     AQI_Pred = sorted(AQI_Pred_using_Params)[-1] # Highest value is considered as the AQI  
     return AQI_Pred,color_codes_params
+
+
+# Made By Kunsh Bhatia

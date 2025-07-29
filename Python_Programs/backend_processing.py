@@ -18,7 +18,7 @@ def AQI_grade(AQI_Predicted): # Tells us about the grade of AQI given the AQI va
         return "Severe"
     else:
         return "Severe"
-    
+# Made By Kunsh Bhatia
 AQI_Color_Codes = ["#00E400","#FFFF00","#FF7E00","#FF0000","#8F3F97","#7E0023"]
 
 def color_code_AQI(AQI_Predicted):
@@ -39,7 +39,7 @@ def color_code_AQI(AQI_Predicted):
 
 with open("Models/AQI_model.pkl","rb") as f:
     AQI_model = pickle.load(f)
-
+# Made By Kunsh Bhatia
 with open("Models/PM2,5_model.pkl","rb") as f:
     PM25_model = pickle.load(f)
 
@@ -138,3 +138,4 @@ def Precautions(AQI_Predicted):
         return Severe
 
 
+# Made By Kunsh Bhatia

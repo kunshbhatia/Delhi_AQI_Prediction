@@ -8,7 +8,7 @@ st.set_page_config(
     page_title="Delhi AQI Predictor",
     layout = "wide"
 )
-
+# Made By Kunsh Bhatia
 st.markdown(f"""
         <div style="background-color: #CFE1E3; padding: 30px; margin-top: 20px;
                 border-radius: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
@@ -39,7 +39,7 @@ if submitted:
     final_O3 = f"{max(0, round(O3[0] - 18, 2))} - {round(O3[0] + 18, 2)}"
     AQI_Color_Codes = color_code_AQI(AQI)
     Precaution = Precautions(AQI)
-
+# Made By Kunsh Bhatia
     def info_card(title, value, icon, unit="",color_code="#0072C6"):
         st.markdown(f"""
             <div style="background-color: #f0f2f6; padding: 20px; margin-bottom: 10px; margin-top: 5px; 
@@ -63,7 +63,7 @@ if submitted:
     col1, col2, col3 = st.columns(3)
     with col1:
         info_card("PM 2.5", final_PM25, "🌫️", "µg/m^3",color_code_params[0])
-    with col2:
+    with col2: # Made By Kunsh Bhatia
         info_card("PM 10", final_PM10, "🏭", "µg/m^3",color_code_params[1])
     with col3:
         info_card("NO2", final_NO2, "🚗", "µg/m^3",color_code_params[2])
@@ -95,6 +95,7 @@ if submitted:
             <div style="font-size: 20px; font-weight: bold; color: #000000; margin-top: 15px;">{Precaution[4]}</div>
         </div>
         """, unsafe_allow_html=True)
+    # Made By Kunsh Bhatia
     st.write("")
     with st.expander("📄 Which Dataset is used to train the model?"):
         st.markdown("""
@@ -122,3 +123,7 @@ st.markdown("""
         © 2025 Kunsh Bhatia | Built with ❤️ and ☕
     </div>
 """, unsafe_allow_html=True)
+
+
+
+# Made By Kunsh Bhatia

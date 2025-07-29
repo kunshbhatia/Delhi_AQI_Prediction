@@ -1,7 +1,7 @@
 # In this python file , we have a function which helps us getting the information such as ,the
 # day provided is a holiday or not provided the date ( Day,Month and Year ) + it helps in getting which
 # day of week is on the date ( Refer  "Information_About_Datasets.txt" for more info).
-
+# Made By Kunsh Bhatia
 import holidays
 from datetime import date
 
@@ -22,3 +22,5 @@ def holidays_weekday_marker(Day,Month,Year):
         holiday = 1
     
     return holiday,weekday_info
+
+# Made By Kunsh Bhatia

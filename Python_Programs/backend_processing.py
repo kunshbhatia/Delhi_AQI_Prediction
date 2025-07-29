@@ -97,7 +97,7 @@ Moderate = [
         "3) Avoid heavy traffic areas 🚗",
         "4) Keep kids and elderly indoors during peak hours 🧓👶",
         "5) Consider wearing N95 masks outside 😷"
-    ],
+    ]
 Poor =  [
         "1) Limit outdoor activity to the minimum 🚷",
         "2) Avoid morning/evening walks near roads 🚶‍♀️❌",

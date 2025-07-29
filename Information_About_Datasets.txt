@@ -1,0 +1,16 @@
+1) Holidays :- 1 :- Yes
+	       0 :- No Holidays ( Working )
+
+2) Days :- 1 :- Monday
+	   2 :- Tuesday
+	   3 :- Wednesday
+	   4 :- Thursday
+	   5 :- Friday
+	   6 :- Saturday
+	   7 :- Sunday 
+
+3) Parameters unit :- All parameters are in (Âµg/mÂ³) EXCEPT CO , it's unit is (mg/mÂ³)
+
+4) For missing data:-
+    A) Approximately calculated based on previous data trends and mathematical calculations.
+    B) Taken from Bawana Air Pollution Monitoring Plant.

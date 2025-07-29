@@ -4,17 +4,17 @@ from Python_Programs.holidays_marker import holidays_weekday_marker
 def AQI_grade(AQI_Predicted): # Tells us about the grade of AQI given the AQI value
 
     # All the values are with respect to CPCB
-    if 0<AQI_Predicted<50 :
+    if 0<=AQI_Predicted<50 :
         return "Good"
-    elif 51<AQI_Predicted<100:
+    elif 51<=AQI_Predicted<100:
         return "Satisfactory"
-    elif 101<AQI_Predicted<200:
+    elif 101<=AQI_Predicted<200:
         return "Moderate"
-    elif 201<AQI_Predicted<300:
+    elif 201<=AQI_Predicted<300:
         return "Poor"
-    elif 301<AQI_Predicted<400:
+    elif 301<=AQI_Predicted<400:
         return "Very Poor"
-    elif 401<AQI_Predicted<500:
+    elif 401<=AQI_Predicted<500:
         return "Severe"
     else:
         return "Severe"
@@ -22,17 +22,17 @@ def AQI_grade(AQI_Predicted): # Tells us about the grade of AQI given the AQI va
 AQI_Color_Codes = ["#00E400","#FFFF00","#FF7E00","#FF0000","#8F3F97","#7E0023"]
 
 def color_code_AQI(AQI_Predicted):
-    if 0<AQI_Predicted<50 :
+    if 0<=AQI_Predicted<50 :
         return AQI_Color_Codes[0]
-    elif 51<AQI_Predicted<100:
+    elif 51<=AQI_Predicted<100:
         return AQI_Color_Codes[1]
-    elif 101<AQI_Predicted<200:
+    elif 101<=AQI_Predicted<200:
         return AQI_Color_Codes[2]
-    elif 201<AQI_Predicted<300:
+    elif 201<=AQI_Predicted<300:
         return AQI_Color_Codes[3]
-    elif 301<AQI_Predicted<400:
+    elif 301<=AQI_Predicted<400:
         return AQI_Color_Codes[4]
-    elif 401<AQI_Predicted<500:
+    elif 401<=AQI_Predicted<500:
         return AQI_Color_Codes[5]
     else:
         return AQI_Color_Codes[5]
@@ -122,17 +122,17 @@ Severe = [
 
 
 def Precautions(AQI_Predicted):
-    if 0<AQI_Predicted<50 :
+    if 0<=AQI_Predicted<50 :
         return Good
-    elif 51<AQI_Predicted<100:
+    elif 51<=AQI_Predicted<100:
         return Satisfactory
-    elif 101<AQI_Predicted<200:
+    elif 101<=AQI_Predicted<200:
         return Moderate
-    elif 201<AQI_Predicted<300:
+    elif 201<=AQI_Predicted<300:
         return Poor
-    elif 301<AQI_Predicted<400:
+    elif 301<=AQI_Predicted<400:
         return Very_Poor
-    elif 401<AQI_Predicted<500:
+    elif 401<=AQI_Predicted<500:
         return Severe
     else:
         return Severe
